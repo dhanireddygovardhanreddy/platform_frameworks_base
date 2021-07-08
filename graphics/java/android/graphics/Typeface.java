@@ -1356,6 +1356,7 @@ public class Typeface {
     }
 
      private static void setPublicDefaults(String familyName) {
+
         synchronized (SYSTEM_FONT_MAP_LOCK) {
             sDefaults = new Typeface[] {
                 DEFAULT,

@@ -192,7 +192,9 @@ class ConfigurationController {
 
             final Application app = mActivityThread.getApplication();
             final Resources appResources = app.getResources();
-	    Typeface.updateDefaultFont(appResources);
+
+            Typeface.updateDefaultFont(appResources);
+
             if (appResources.hasOverrideDisplayAdjustments()) {
                 // The value of Display#getRealSize will be adjusted by FixedRotationAdjustments,
                 // but Display#getSize refers to DisplayAdjustments#mConfiguration. So the rotated
